@@ -1,0 +1,52 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - show_product_info
+  - track_order
+  - payment_methods
+  - create_account
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_create_account:
+  - text: "To create an account, click on the 'Sign Up' button on the top right corner of our website and follow the instructions to complete the registration process."
+
+  utter_payment_methods:
+  - text: "We accept major credit cards, debit cards, and PayPal as payment methods for online orders."
+
+  utter_track_order:
+  - text: "You can track your order by logging into your account and navigating to the 'Order History' section. There, you will find the tracking information for your shipment."
+
+  utter_product_info:
+    - text: "The Volantex Ranger 757-4 FPV RC Airplane is priced at PKR 39,995. It is a beginner-friendly FPV RC airplane with a 1380mm wingspan. This airplane offers quick and trouble-free setup, making it ideal for novice FPV pilots. It features a durable EPO fuselage, making it crash-resistant. There's plenty of space for mounting electronics and additional gear, ensuring a clean and organized setup:"
+      image: "https://www.pakrcmart.com/pub/media/catalog/product/cache/16d80972cad76d3059e1ce45de338b16/v/r/vr-7574_09.jpeg"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
